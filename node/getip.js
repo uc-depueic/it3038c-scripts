@@ -8,10 +8,10 @@ function hostnameLookup(hostname) {
 
 
 if (procces.argv.length <= 2) {
-    console.log("USAGE: " + __filename + "hostname.com")
+    console.log("USAGE: " + __filename + " IPADDR")
     procces.exit(-1)
 }
 
 var hostname = procces.argv[2]
 console.log('Checking IP of: ${hostname}')
-hostnameLookup(hostname)
+hostnameLookup(hostname);
