@@ -1,0 +1,4 @@
+Get-Date -Format 'HH:mm K'
+
+$Time = Get-Date
+$Time.ToUniversalTime() 
