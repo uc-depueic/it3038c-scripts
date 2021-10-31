@@ -1,0 +1,11 @@
+Link to project 2 script - https://github.com/uc-depueic/it3038c-scripts/blob/main/projects/project2.ps1
+
+For my project 2 script I created something to check the available virtually memory left on my vm and display the information in a text file located at C:/Memory/Memoryleft.txt 
+
+I created the whole thing in a while(true) loop so I could use the start-sleep command to have it run automatically. It currently runs daily. I pulled most of my commands from just plain
+microsoft powershell tutorials so I do not tink any of it is worth referencing. 
+
+Basically how the script works is I first created a variable called memeory and set that equal to a command to get the osfreevirtualmemory. I used the get-date to put a timestamp of the script
+every time it runs so I know what day the script was ran and the memory left on that date. I had to play around to get it to display just the memory number and not the whole string, 
+hence the variable.property and setting the memory equal to the exact command to display the number (probably was simpler way, but hey it worked out.) I then have it write out saying
+how much memory is left and how it export it to a text file with a timestamp. The while(true) loop is to just go with the start sleep command to have it run automatically. 
