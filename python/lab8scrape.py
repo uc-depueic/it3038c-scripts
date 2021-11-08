@@ -6,8 +6,9 @@ r = requests.get('https://www.walmart.com/cp/food/976759').content
 ##data = requests.get("https://www.walmart.com/cp/food/976759") 
 soup = BeautifulSoup(r, 'html.parser')
 
+
 ##details = soup.findALL("h2",  {"class": "w_wCv lh-title ma0"})
-details = soup.findAll('div')
+details = soup.findAll(class_="Seasonal Flavors")
 print(details) 
 
 ##print(soup.prettify())
