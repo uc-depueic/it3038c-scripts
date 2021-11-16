@@ -7,7 +7,7 @@ function listBlue(res) {
     }); 
 
     res.end(JSON.stringify(colorBlue)); 
-
+}
 
 var server = http.createServer(function(req, res){ 
     if (req.url === "/") { 
@@ -24,4 +24,4 @@ var server = http.createServer(function(req, res){
 }); 
  
 server.listen(3000); 
-console.log("Server is listening on port 3000"); 
+console.log("Server is listening on port 3000");
