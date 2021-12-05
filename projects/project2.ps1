@@ -3,6 +3,9 @@ while($true) {
     Get-Date
     $variable.property
     $Memory = $Memory.OsFreeVirtualMemory
+
+
+
     write-host "Your System has $Memory bytes of memory left."
     
     
