@@ -12,7 +12,7 @@
     $Amount = $Total - $Memory
 
 
-if ($Amount -lt 20000000)  {
+if ($Amount -lt 75000)  {
     write-host ("You should considering adding more memory soon you curently only have $Memory bytes remaining.")
 
     
